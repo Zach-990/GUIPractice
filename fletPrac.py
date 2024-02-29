@@ -1,24 +1,7 @@
 import flet as ft
 
 def main(page: ft.Page):
-
-    t = ft.Text(value="Xin chao", color="blue")
-    page.add(t)
     
-    page.add(
-        ft.Row(controls=[
-            ft.Text("A"),
-            ft.Text("B"),
-            ft.Text("C")
-        ])
-    )
-
-    page.add(
-        ft.Row(controls=[
-            ft.TextField(label="Your name"),
-            ft.ElevatedButton(text="Say my name!")
-        ])
-    )
     #goi ham pick file
     def pick_files_result(e: ft.FilePickerResultEvent):
         selected_files.value = (
