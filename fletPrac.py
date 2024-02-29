@@ -13,6 +13,14 @@ def main(page: ft.Page):
     selected_files = ft.Text()
 #goi ham page.overlay de hien thu khung chon file
     page.overlay.append(pick_files_dialog)
+
+    page.add(
+        ft.Row([
+            ft.Text(value="Doc file",color="green")
+        ]
+        )
+    )
+
 #page.add de them button
     page.add(
         ft.Row(
@@ -22,7 +30,7 @@ def main(page: ft.Page):
                     icon=ft.icons.UPLOAD_FILE,
                     on_click=lambda _: pick_files_dialog.pick_files(
                         allow_multiple=True
-                    ),#ham tao button voi cac chuc nang 
+                    ),
                 ),
                 selected_files,
             ]
