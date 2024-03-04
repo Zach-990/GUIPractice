@@ -13,14 +13,6 @@ def main(page: ft.Page):
     selected_files = ft.Text()
 #goi ham page.overlay de hien thu khung chon file
     page.overlay.append(pick_files_dialog)
-
-    page.add(
-        ft.Row([
-            ft.Text(value="Doc file",color="green")
-        ]
-        )
-    )
-
 #page.add de them button
     page.add(
         ft.Row(
