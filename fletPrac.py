@@ -26,6 +26,15 @@ def main(page: ft.Page):
                 ),
                 selected_files,
             ]
+        ),
+        ##dng bi doan nay chua biet xu ly
+        ft.Row(
+            [
+                ft.ElevatedButton(
+                    "Open File",
+                    icon=ft.icons.OPEN_IN_FULL,
+                )
+        ]
         )
     )
 
